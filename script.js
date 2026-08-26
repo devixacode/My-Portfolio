@@ -105,20 +105,55 @@
         });
     });
 
-    // Contact form (demo only, no backend)
-    const form = document.getElementById('contactForm');
-    form.addEventListener('submit', (e) => {
-        e.preventDefault();
-        const btn = form.querySelector('button[type="submit"]');
-        const original = btn.innerHTML;
+    // Contact form — sends the submission to your email via Web3Forms
+    
+  const form = document.getElementById('contactForm');
+  const statusEl = document.getElementById('formStatus');
+  form.addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const btn = document.getElementById('formSubmitBtn');
+    const original = btn.innerHTML;
+    const accessKey = form.querySelector('input[name="access_key"]').value;
+
+    if(!accessKey || accessKey === 'PASTE_YOUR_WEB3FORMS_ACCESS_KEY_HERE'){
+      statusEl.textContent = 'Form not connected yet — add your Web3Forms access key in the code.';
+      statusEl.style.color = '#f87171';
+      return;
+    }
+
+    btn.disabled = true;
+    btn.innerHTML = 'Sending... <i class="fa-solid fa-spinner fa-spin"></i>';
+    statusEl.textContent = '';
+
+    try{
+      const formData = new FormData(form);
+      const res = await fetch('https://api.web3forms.com/submit', {
+        method: 'POST',
+        headers: { 'Accept': 'application/json' },
+        body: formData
+      });
+      const result = await res.json();
+
+      if(result.success){
         btn.innerHTML = 'Message Sent <i class="fa-solid fa-check"></i>';
-        btn.style.opacity = '0.85';
-        setTimeout(() => {
-            btn.innerHTML = original;
-            btn.style.opacity = '1';
-            form.reset();
-        }, 2200);
-    });
+        statusEl.textContent = "Thanks! Your message has been sent — I'll get back to you soon.";
+        statusEl.style.color = '#34d399';
+        form.reset();
+      } else {
+        throw new Error(result.message || 'Something went wrong');
+      }
+    } catch(err){
+      btn.innerHTML = 'Try Again <i class="fa-solid fa-rotate-right"></i>';
+      statusEl.textContent = "Couldn't send your message. Please try again or email me directly.";
+      statusEl.style.color = '#f87171';
+    } finally {
+      setTimeout(() => {
+        btn.disabled = false;
+        btn.innerHTML = original;
+      }, 3000);
+    }
+  });
+
 
     // Smooth anchor scroll offset for sticky nav
     document.querySelectorAll('a[href^="#"]').forEach(a => {
