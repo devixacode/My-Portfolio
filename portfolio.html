@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Salman Malik — Web Developer</title>
+<meta name="description" content="Salman Malik — Web Developer building modern, high-performance web experiences." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link rel="stylesheet" href="portfolio.css">
+</head>
+<body>
+
+<div class="bg-fx">
+  <div class="grid"></div>
+  <div class="orb orb-1"></div>
+  <div class="orb orb-2"></div>
+  <div class="orb orb-3"></div>
+</div>
+
+<!-- Navbar -->
+<nav class="navbar" id="navbar">
+  <div class="container nav-inner">
+    <a href="#home" class="logo"><span class="mark">&lt;/&gt;</span>Salman<span class="grad-text">.</span></a>
+    <ul class="nav-links">
+      <li><a href="#home">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="SALMAN .CV (1).pdf" class="btn btn-ghost btn-sm"><i class="fa-solid fa-arrow-down"></i> Resume</a>
+      <a href="#contact" class="btn btn-primary btn-sm">Let's Talk</a>
+      <button class="hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false"><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<div class="menu-backdrop" id="menuBackdrop"></div>
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#home">Home</a>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#experience">Experience</a>
+  <a href="#pricing">Pricing</a>
+  <a href="#contact">Contact</a>
+  <a href="SALMAN .CV (1).pdf" style="border:none;margin-top:16px;">
+    <span class="btn btn-primary" style="width:100%;justify-content:center;">Download Resume</span>
+  </a>
+</div>
+
+<!-- Hero -->
+<header class="hero" id="home">
+  <div class="container">
+    <div class="reveal stagger" id="heroStagger">
+      <div class="badge" style="--i:0" data-reveal><span class="dot"></span> Available for Freelance Work</div>
+      <h1 style="--i:1" data-reveal>
+        <span class="line">Hi, I'm <span class="grad-text">Salman Malik</span></span>
+      </h1>
+      <div class="hero-role" style="--i:2" data-reveal><span id="typedRole"></span><span class="cursor"></span></div>
+      <p class="lead" style="--i:3" data-reveal>I build modern, responsive and high-performance web experiences — from pixel-perfect interfaces to scalable backend systems.</p>
+      <div class="hero-cta" style="--i:4" data-reveal>
+        <a href="#projects" class="btn btn-primary">View My Work <i class="fa-solid fa-arrow-right"></i></a>
+        <a href="#contact" class="btn btn-ghost">Let's Talk</a>
+      </div>
+      <div class="hero-stats" style="--i:5" data-reveal>
+        <div class="stat"><b>10+</b><span>Projects Shipped</span></div>
+        <div class="stat"><b>3 yrs</b><span>Experience</span></div>
+        <div class="stat"><b>30+</b><span>Happy Clients</span></div>
+      </div>
+    </div>
+  </div>
+  <div class="scroll-indicator"><span>Scroll</span><div class="wheel"><div class="dot2"></div></div></div>
+</header>
+
+<!-- About -->
+<section id="about">
+  <div class="container">
+    <div class="section-head reveal" data-reveal>
+      <div class="eyebrow">About Me</div>
+      <h2>Turning ideas into fast, elegant products</h2>
+    </div>
+    <div class="about-grid">
+      <div class="about-media reveal" data-reveal>
+        <div class="about-frame">
+          <img src="ss.png" alt="Portrait of Salman Malik, web developer" />
+          <div class="glow"></div>
+        </div>
+        <div class="about-badge">
+          <i class="fa-solid fa-code-branch"></i>
+          <div><b>120+</b><span>Repos shipped</span></div>
+        </div>
+      </div>
+      <div class="about-copy reveal" data-reveal>
+        <p>I'm a full stack developer with five years of experience designing and building products for startups and growing teams — from marketing sites to complex SaaS dashboards.</p>
+        <p>I care about the details most people skip: load times, accessibility, motion that feels intentional, and code that's easy for the next developer to pick up. My approach blends clean engineering with a strong eye for design, so what ships looks as good as it performs.</p>
+        <p>When I'm not building, I'm usually exploring new frameworks, contributing to open source, or mentoring junior developers.</p>
+        <div class="about-stats">
+          <div class="stat-card"><b>10+</b><span>Projects Completed</span></div>
+          <div class="stat-card"><b>3</b><span>Years of Experience</span></div>
+          <div class="stat-card"><b>30+</b><span>Happy Clients</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills">
+  <div class="container">
+    <div class="section-head reveal" data-reveal>
+      <div class="eyebrow">Skills</div>
+      <h2>Tools I use to build great products</h2>
+      <p>A focused toolkit spanning frontend, backend and workflow — refined over years of shipping real products.</p>
+    </div>
+    <div class="skills-grid">
+      <div class="skill-card reveal" data-reveal><i class="fa-brands fa-html5"></i><h4>HTML5</h4><p>Semantic, accessible markup</p><div class="skill-bar"><i style="width:95%"></i></div></div>
+      <div class="skill-card reveal" data-reveal><i class="fa-brands fa-css3-alt"></i><h4>CSS3</h4><p>Layout, animation, design systems</p><div class="skill-bar"><i style="width:92%"></i></div></div>
+      <div class="skill-card reveal" data-reveal><i class="fa-brands fa-js"></i><h4>JavaScript</h4><p>Modern ES6+, async patterns</p><div class="skill-bar"><i style="width:94%"></i></div></div>
+      <div class="skill-card reveal" data-reveal><i class="fa-brands fa-react"></i><h4>React</h4><p>Component architecture, hooks</p><div class="skill-bar"><i style="width:90%"></i></div></div>
+      <div class="skill-card reveal" data-reveal><i class="fa-solid fa-n"></i><h4>Next.js</h4><p>SSR, routing, performance</p><div class="skill-bar"><i style="width:85%"></i></div></div>
+      <div class="skill-card reveal" data-reveal><i class="fa-brands fa-node-js"></i><h4>Node.js</h4><p>APIs, services, tooling</p><div class="skill-bar"><i style="width:88%"></i></div></div>
+      <div class="skill-card reveal" data-reveal><i class="fa-brands fa-git-alt"></i><h4>Git</h4><p>Version control, branching flows</p><div class="skill-bar"><i style="width:93%"></i></div></div>
+      <div class="skill-card reveal" data-reveal><i class="fa-brands fa-github"></i><h4>GitHub</h4><p>CI/CD, collaboration</p><div class="skill-bar"><i style="width:90%"></i></div></div>
+      <div class="skill-card reveal" data-reveal><i class="fa-solid fa-wind"></i><h4>Tailwind CSS</h4><p>Utility-first styling</p><div class="skill-bar"><i style="width:91%"></i></div></div>
+      <div class="skill-card reveal" data-reveal><i class="fa-brands fa-figma"></i><h4>Figma</h4><p>Prototyping, handoff</p><div class="skill-bar"><i style="width:80%"></i></div></div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Projects -->
+<section id="projects">
+  <div class="container">
+    <div class="section-head reveal" data-reveal>
+      <div class="eyebrow">Selected Work</div>
+      <h2>Projects I'm proud of</h2>
+      <p>A mix of client work and personal builds across web, product and full stack engineering.</p>
+    </div>
+    <div class="filters reveal" data-reveal>
+      <button class="filter-btn active" data-filter="all">All</button>
+      <button class="filter-btn" data-filter="web">Web Development</button>
+      <button class="filter-btn" data-filter="react">React</button>
+      <button class="filter-btn" data-filter="uiux">UI/UX</button>
+      <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+    </div>
+    <div class="projects-grid" id="projectsGrid">
+
+      <div class="project-card reveal" data-reveal data-cat="fullstack web">
+        <div class="proj-media">
+          <img src="https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=700&q=80&auto=format&fit=crop" alt="E-Commerce Website project screenshot">
+          <div class="proj-overlay"><a href="#" class="view-project">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-tags"><span>Next.js</span><span>Stripe</span><span>PostgreSQL</span></div>
+          <h3>E-Commerce Website</h3>
+          <p>A full-featured storefront with cart, checkout and an admin dashboard.</p>
+          <div class="proj-links"><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a><a href="#"><i class="fa-brands fa-github"></i> GitHub</a></div>
+        </div>
+      </div>
+
+      <div class="project-card reveal" data-reveal data-cat="react uiux">
+        <div class="proj-media">
+          <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?w=700&q=80&auto=format&fit=crop" alt="SaaS Dashboard project screenshot">
+          <div class="proj-overlay"><a href="#" class="view-project">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-tags"><span>React</span><span>Recharts</span><span>Tailwind</span></div>
+          <h3>SaaS Dashboard</h3>
+          <p>Analytics dashboard with real-time charts and role-based access.</p>
+          <div class="proj-links"><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a><a href="#"><i class="fa-brands fa-github"></i> GitHub</a></div>
+        </div>
+      </div>
+
+      <div class="project-card reveal" data-reveal data-cat="web uiux">
+        <div class="proj-media">
+          <img src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?w=700&q=80&auto=format&fit=crop" alt="Restaurant website project screenshot">
+          <div class="proj-overlay"><a href="#" class="view-project">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-tags"><span>HTML/CSS</span><span>GSAP</span><span>Figma</span></div>
+          <h3>Restaurant Website</h3>
+          <p>A warm, image-led site with online reservations and a live menu.</p>
+          <div class="proj-links"><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a><a href="#"><i class="fa-brands fa-github"></i> GitHub</a></div>
+        </div>
+      </div>
+
+      <div class="project-card reveal" data-reveal data-cat="uiux web">
+        <div class="proj-media">
+          <img src="Screenshot (86).png" alt="Portfolio website project screenshot">
+          <div class="proj-overlay"><a href="http://127.0.0.1:5500/portfolio.html#" class="view-project">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-tags"><span>HTML</span><span>Framer Motion</span>
+        <span>CSS & Javascript</span></div>
+          <h3>Portfolio Website</h3>
+          <p>A motion-forward portfolio built for a design studio client.</p>
+          <div class="proj-links"><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a><a href="#"><i class="fa-brands fa-github"></i> GitHub</a></div>
+        </div>
+      </div>
+
+      <div class="project-card reveal" data-reveal data-cat="fullstack react">
+        <div class="proj-media">
+          <img src="https://images.unsplash.com/photo-1611224923853-80b023f02d71?w=700&q=80&auto=format&fit=crop" alt="Task management app project screenshot">
+          <div class="proj-overlay"><a href="#" class="view-project">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-tags"><span>React</span><span>Node.js</span><span>MongoDB</span></div>
+          <h3>Task Management App</h3>
+          <p>Kanban-style task board with drag & drop and team collaboration.</p>
+          <div class="proj-links"><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a><a href="#"><i class="fa-brands fa-github"></i> GitHub</a></div>
+        </div>
+      </div>
+
+      <div class="project-card reveal" data-reveal data-cat="fullstack react">
+        <div class="proj-media">
+          <img src="https://images.unsplash.com/photo-1677442136019-21780ecad995?w=700&q=80&auto=format&fit=crop" alt="AI web application project screenshot">
+          <div class="proj-overlay"><a href="#" class="view-project">View Project <i class="fa-solid fa-arrow-up-right-from-square"></i></a></div>
+        </div>
+        <div class="proj-body">
+          <div class="proj-tags"><span>React</span><span>OpenAI API</span><span>Node.js</span></div>
+          <h3>AI Web Application</h3>
+          <p>An AI writing assistant with streaming responses and history.</p>
+          <div class="proj-links"><a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i> Live Demo</a><a href="#"><i class="fa-brands fa-github"></i> GitHub</a></div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Experience -->
+<section id="experience">
+  <div class="container">
+    <div class="section-head reveal" data-reveal>
+      <div class="eyebrow">Experience</div>
+      <h2>Where I've worked</h2>
+    </div>
+    <div class="timeline">
+      <div class="tl-item reveal" data-reveal>
+        <div class="tl-dot"></div>
+        <span class="tl-date">2025 — Present</span>
+        <h3>Senior Full Stack Developer</h3>
+        <span class="tl-company">Northwind Digital</span>
+        <p>Leading frontend architecture for a suite of client SaaS products, mentoring two developers and shaping the design system used across the team.</p>
+        <div class="tl-tags"><span>React</span><span>Next.js</span><span>Node.js</span><span>PostgreSQL</span></div>
+      </div>
+      <div class="tl-item reveal" data-reveal>
+        <div class="tl-dot"></div>
+        <span class="tl-date">2023 — 2025</span>
+        <h3>Frontend Developer</h3>
+        <span class="tl-company">Pixelforge Studio</span>
+        <p>Built and maintained marketing sites and dashboards for 15+ clients, improving average load time by 40% through performance audits.</p>
+        <div class="tl-tags"><span>JavaScript</span><span>React</span><span>Tailwind CSS</span></div>
+      </div>
+      <div class="tl-item reveal" data-reveal>
+        <div class="tl-dot"></div>
+        <span class="tl-date">2022 — 2023</span>
+        <h3>Junior Web Developer</h3>
+        <span class="tl-company">Brightline Labs</span>
+        <p>Started my career building responsive websites and learning full stack fundamentals in a fast-paced agency environment.</p>
+        <div class="tl-tags"><span>HTML5</span><span>CSS3</span><span>jQuery</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Services -->
+<section id="services">
+  <div class="container">
+    <div class="section-head reveal" data-reveal>
+      <div class="eyebrow">Services</div>
+      <h2>How I can help</h2>
+    </div>
+    <div class="services-grid">
+      <div class="service-card reveal" data-reveal><div class="ico"><i class="fa-solid fa-code"></i></div><h3>Web Development</h3><p>End-to-end builds — from architecture to deployment — for sites and web apps that scale.</p></div>
+      <div class="service-card reveal" data-reveal><div class="ico"><i class="fa-solid fa-layer-group"></i></div><h3>Frontend Development</h3><p>Fast, accessible interfaces built with modern frameworks and clean component design.</p></div>
+      <div class="service-card reveal" data-reveal><div class="ico"><i class="fa-solid fa-pen-ruler"></i></div><h3>UI/UX Implementation</h3><p>Turning Figma designs into pixel-accurate, interactive experiences.</p></div>
+      <div class="service-card reveal" data-reveal><div class="ico"><i class="fa-solid fa-mobile-screen"></i></div><h3>Responsive Design</h3><p>Layouts that feel native on every screen, from mobile to ultra-wide.</p></div>
+      <div class="service-card reveal" data-reveal><div class="ico"><i class="fa-solid fa-gauge-high"></i></div><h3>Website Optimization</h3><p>Performance audits and fixes that improve load time, SEO and Core Web Vitals.</p></div>
+      <div class="service-card reveal" data-reveal><div class="ico"><i class="fa-solid fa-diagram-project"></i></div><h3>API & Backend Integration</h3><p>Robust APIs and integrations that connect your product to the tools it needs.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- Pricing -->
+<section id="pricing">
+  <div class="container">
+    <div class="section-head reveal" data-reveal>
+      <div class="eyebrow">Pricing</div>
+      <h2>Packages &amp; Pricing</h2>
+      <p>Simple, transparent pricing for each service — pick a package or get in touch for something custom.</p>
+    </div>
+    <div class="pricing-grid">
+
+      <div class="price-card reveal" data-reveal>
+        <h3>Starter Website</h3>
+        <p class="price-desc">Best for landing pages &amp; small business sites</p>
+        <div class="price-amount">$499 <span>/ project</span></div>
+        <p class="price-note">One-time payment · 2 week delivery</p>
+        <ul class="price-features">
+          <li><i class="fa-solid fa-check"></i> Up to 5 responsive pages</li>
+          <li><i class="fa-solid fa-check"></i> Basic UI/UX design</li>
+          <li><i class="fa-solid fa-check"></i> Contact form integration</li>
+          <li><i class="fa-solid fa-check"></i> Website Optimization</li>
+          <li><i class="fa-solid fa-check"></i> 1 round of revisions</li>
+        </ul>
+        <a href="#contact" class="btn btn-ghost">Choose Plan</a>
+      </div>
+
+      <div class="price-card featured reveal" data-reveal>
+        <span class="price-tag">Most Popular</span>
+        <h3>Full Stack Build</h3>
+        <p class="price-desc">Best for startups &amp; growing businesses</p>
+        <div class="price-amount">$1,499 <span>/ project</span></div>
+        <p class="price-note">One-time payment · 4–6 week delivery</p>
+        <ul class="price-features">
+          <li><i class="fa-solid fa-check"></i> Web Development + Frontend Development</li>
+          <li><i class="fa-solid fa-check"></i> Custom UI/UX Implementation</li>
+          <li><i class="fa-solid fa-check"></i> Full Responsive Design</li>
+          <li><i class="fa-solid fa-check"></i> API &amp; Backend Integration</li>
+          <li><i class="fa-solid fa-check"></i> Website Optimization</li>
+          <li><i class="fa-solid fa-check"></i> 3 rounds of revisions</li>
+        </ul>
+        <a href="#contact" class="btn btn-primary">Choose Plan</a>
+      </div>
+
+      <div class="price-card reveal" data-reveal>
+        <h3>Enterprise / SaaS</h3>
+        <p class="price-desc">Best for complex products &amp; ongoing work</p>
+        <div class="price-amount">Custom</div>
+        <p class="price-note">Monthly retainer or fixed quote</p>
+        <ul class="price-features">
+          <li><i class="fa-solid fa-check"></i> Everything in Full Stack Build</li>
+          <li><i class="fa-solid fa-check"></i> Dedicated ongoing support</li>
+          <li><i class="fa-solid fa-check"></i> Scalable architecture &amp; DevOps</li>
+          <li><i class="fa-solid fa-check"></i> Priority turnaround</li>
+          <li><i class="fa-solid fa-check"></i> Unlimited revisions</li>
+        </ul>
+        <a href="#contact" class="btn btn-ghost">Get a Quote</a>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Testimonials -->
+<section id="testimonials">
+  <div class="container">
+    <div class="section-head reveal" data-reveal>
+      <div class="eyebrow">Testimonials</div>
+      <h2>What clients say</h2>
+    </div>
+    <div class="testimonials-grid">
+      <div class="testi-card reveal" data-reveal>
+        <div class="stars">★★★★★</div>
+        <p class="quote">Salman rebuilt our dashboard from the ground up and the difference in speed and usability was night and day. Communicative, precise and genuinely invested in the outcome.</p>
+        <div class="testi-person">
+          <img src="https://images.unsplash.com/photo-1573497019940-1c28c88b4f3e?w=100&q=80&auto=format&fit=crop" alt="Sarah Whitfield">
+          <div><b>Sarah Whitfield</b><span>Product Lead, Northwind</span></div>
+        </div>
+      </div>
+      <div class="testi-card reveal" data-reveal>
+        <div class="stars">★★★★★</div>
+        <p class="quote">One of the few developers I've worked with who cares equally about code quality and design polish. Our conversion rate improved within weeks of launch.</p>
+        <div class="testi-person">
+          <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=100&q=80&auto=format&fit=crop" alt="Daniel Reyes">
+          <div><b>Daniel Reyes</b><span>Founder, Brightline Co.</span></div>
+        </div>
+      </div>
+      <div class="testi-card reveal" data-reveal>
+        <div class="stars">★★★★★</div>
+        <p class="quote">Delivered ahead of schedule and handled scope changes without breaking a sweat. Our new site feels premium and loads instantly.</p>
+        <div class="testi-person">
+          <img src="https://images.unsplash.com/photo-1580489944761-15a19d654956?w=100&q=80&auto=format&fit=crop" alt="Amelia Ross">
+          <div><b>Amelia Ross</b><span>Marketing Director, Loop Studio</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Contact -->
+<section id="contact">
+  <div class="container">
+    <div class="contact-grid">
+      <div class="contact-info reveal" data-reveal>
+        <div class="eyebrow">Contact</div>
+        <h2>Let's Build Something <span class="grad-text">Great Together</span></h2>
+        <p>Have a project in mind or just want to say hello? My inbox is always open — I try to reply within a day.</p>
+        <div class="info-row"><div class="ic"><i class="fa-solid fa-envelope"></i></div><div><b>Email</b><span>maliksalmanbilal268@gmail.com</span></div></div>
+        <div class="info-row"><div class="ic"><i class="fa-solid fa-location-dot"></i></div><div><b>Location</b><span>Bahawalpur, Pakistan · Remote friendly</span></div></div>
+        <div class="social-row">
+          <a href="https://github.com/devixacode" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+          <a href="https://www.linkedin.com/in/muhammad-salman-435b633a8/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+          <a href="https://x.com/Salman_officia" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+          <a href="#" aria-label="Dribbble"><i class="fa-brands fa-dribbble"></i></a>
+        </div>
+      </div>
+      <form class="contact-form reveal" data-reveal id="contactForm">
+        <div class="form-row">
+          <div class="field"><label for="name">Name</label><input id="name" type="text" placeholder="Your name" required></div>
+          <div class="field"><label for="email">Email</label><input id="email" type="email" placeholder="you@email.com" required></div>
+        </div>
+        <div class="field"><label for="subject">Subject</label><input id="subject" type="text" placeholder="Project inquiry"></div>
+        <div class="field"><label for="message">Message</label><textarea id="message" placeholder="Tell me a bit about your project..." required></textarea></div>
+        <button type="submit" class="btn btn-primary">Send Message <i class="fa-solid fa-paper-plane"></i></button>
+      </form>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <a href="#home" class="logo"><span class="mark">&lt;/&gt;</span>Salman<span class="grad-text">.</span></a>
+        <p class="footer-tag">Full stack developer crafting fast, elegant web experiences.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <div class="footer-links">
+          <a href="#home">Home</a>
+          <a href="#about">About</a>
+          <a href="#projects">Projects</a>
+          <a href="#pricing">Pricing</a>
+          <a href="#contact">Contact</a>
+        </div>
+      </div>
+      <div class="footer-col">
+        <h4>Skills</h4>
+        <ul class="footer-skills">
+          <li>HTML5</li>
+          <li>CSS3</li>
+          <li>JavaScript</li>
+          <li>React</li>
+          <li>Next.js</li>
+          <li>Node.js</li>
+          <li>Git</li>
+          <li>GitHub</li>
+          <li>Tailwind CSS</li>
+          <li>Figma</li>
+          <li>Graphic Designing</li>
+          <li>Ai Automation</li>
+          <li>Ai Chatbot dev</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Salman Malik. All rights reserved.</span>
+      <div class="footer-social">
+        <a href="https://github.com/devixacode" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+        <a href="https://www.linkedin.com/in/muhammad-salman-435b633a8/" aria-label="LinkedIn"><i class="fa-brands fa-linkedin-in"></i></a>
+        <a href="https://x.com/Salman_officia" aria-label="X / Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="portfolio.js"></script>
+
+</body>
+</html>
