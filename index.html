@@ -221,11 +221,21 @@
 
   /* ===== Hero ===== */
   .hero{
+    overflow:hidden;
     min-height:100vh;
     display:flex;align-items:center;
     padding-top:120px;padding-bottom:80px;
     position:relative;
   }
+  .hero-video{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+    }
   .badge{
     display:inline-flex;align-items:center;gap:8px;
     padding:8px 16px;border-radius:99px;
@@ -245,7 +255,7 @@
     100%{box-shadow:0 0 0 0 rgba(52,211,153,0);}
   }
   .hero h1{
-    font-size:clamp(40px,6.4vw,78px);
+    font-size:clamp(30px,4.4vw,58px);
     line-height:1.04;
     letter-spacing:-0.03em;
     margin-bottom:24px;
@@ -655,6 +665,9 @@
 <!-- Hero -->
 <header class="hero" id="home">
   <div class="container">
+    <video class="hero-video" autoplay muted loop playsinline>
+        <source src="s.mp4" type="video/mp4">
+      </video>
     <div class="reveal stagger" id="heroStagger">
       <div class="badge" style="--i:0" data-reveal><span class="dot"></span> Available for Freelance Work</div>
       <h1 style="--i:1" data-reveal>
